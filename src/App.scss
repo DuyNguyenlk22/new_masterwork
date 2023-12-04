@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 html {
-  font-family: "Open Sans", sans-serif;
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito", sans-serif;
   color: #5a5a5a;
+  font-size: 16px;
 }
 
 .container {
@@ -14,10 +14,16 @@ html {
   margin: 0 auto;
   max-width: 1400px;
 }
+.color-pink {
+  color: #dc4f72;
+}
+.color-title {
+  color: #2c3038;
+}
 
 .btnOutlineGlobal {
   line-height: 52px;
-  font-weight: 500;
+  font-weight: 600;
   padding: 0px 30px;
   background-color: transparent;
   text-transform: uppercase;
@@ -34,6 +40,9 @@ html {
 
 .btnGlobal {
   padding: 0px 30px;
+  line-height: 52px;
+  font-weight: 600;
+  border-radius: 5px;
   color: #fff;
   background-color: #dc4f72;
   border-color: #dc4f72;
@@ -41,5 +50,13 @@ html {
     color: #fff;
     background-color: #d62f58;
     border-color: #cf2952;
+  }
+}
+
+.imgHover {
+  transform: translateY(0);
+  transition: 0.4s;
+  &:hover {
+    transform: translateY(-10px);
   }
 }

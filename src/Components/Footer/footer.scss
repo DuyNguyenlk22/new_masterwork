@@ -1,0 +1,17 @@
+.footer__top {
+    li {
+        transition: all 0.5s;
+        &:hover {
+            color: #dc4f72;
+        }
+    }
+}
+
+.footer__bottom {
+    a {
+        transition: all 0.5s;
+        &:hover {
+            color: #dc4f72;
+        }
+    }
+}

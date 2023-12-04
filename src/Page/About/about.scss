@@ -1,0 +1,11 @@
+.number__item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);
+    border: 1px solid #fff;
+    transition: 0.5s;
+    &:hover {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+    }
+}

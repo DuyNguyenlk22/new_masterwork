@@ -1,0 +1,27 @@
+.testimonails {
+    width: auto;
+    height: auto;
+    background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.8)), url(../../../public/image/bg2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.swiper {
+    padding: 20px !important;
+}
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: -5px !important;
+}
+.swiper-pagination-bullet-active {
+    background: #dc4f72 !important;
+}
+.swiper-pagination-bullet {
+    border-radius: 0 !important;
+    width: 30px !important;
+    height: 4px !important;
+}

@@ -3,6 +3,9 @@
     li {
         position: relative;
         transition: all 0.5s;
+        &:hover {
+            color: #dc4f72;
+        }
         &:hover::after {
             width: 20px;
         }
