@@ -1,0 +1,28 @@
+#header {
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+    li {
+        position: relative;
+        transition: all 0.5s;
+        &:hover::after {
+            width: 20px;
+        }
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -0.1875rem;
+            left: 0;
+            height: 0.175rem;
+            width: 0;
+            background-color: #dc4f72;
+            transition: all 0.5s;
+        }
+    }
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
