@@ -1,0 +1,27 @@
+@import "node_modules/react-modal-video/scss/modal-video.scss";
+
+.modal-video-close-btn {
+    right: 0;
+    top: -25px;
+    width: 15px;
+    height: 40px;
+    font-weight: 700;
+}
+#buttonAnimate {
+    transition: 0.3s ease-in-out;
+    animation: spreadOut 1s linear infinite;
+}
+@keyframes spreadOut {
+    0% {
+        box-shadow:
+            0 0 0 0 rgba(255, 255, 255, 0.15),
+            0 0 0 10px rgba(255, 255, 255, 0.15),
+            0 0 0 20px rgba(255, 255, 255, 0.15);
+    }
+    100% {
+        box-shadow:
+            0 0 0 10px rgba(255, 255, 255, 0.15),
+            0 0 0 20px rgba(255, 255, 255, 0.15),
+            0 0 0 40px rgba(50, 100, 245, 0);
+    }
+}

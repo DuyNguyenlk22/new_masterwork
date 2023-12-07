@@ -1,0 +1,52 @@
+.featuresAbout__icon {
+    position: relative;
+    top: 60px;
+    display: inline-block;
+    margin-bottom: 68px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    transition: all 0.3s ease;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 26px;
+    background-color: #dc4f72;
+}
+#bott-img {
+    width: 100%;
+    height: 250px;
+    margin: 0px 0;
+    text-align: center;
+    transition: all 0.3s ease;
+    padding: 0 45px;
+    &:hover {
+        .featuresAbout__icon {
+            top: -40px;
+        }
+        #mission {
+            top: -80px;
+        }
+        #description {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+}
+#mission {
+    position: relative;
+    top: 10px;
+    transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+#description {
+    margin: -6em auto 0;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    p {
+        color: #2c3038;
+        font-size: 16px;
+        line-height: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

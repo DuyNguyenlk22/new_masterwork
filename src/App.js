@@ -1,7 +1,9 @@
 import "./App.scss";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import HomePage from "./Page/HomePage";
 import Layout from "./Layout/Layout";
+import HomePage from "./Page/HomePage/HomePage";
+import AboutPage from "./Page/AboutUsPage/AboutPage";
+import ServicesPage from "./Page/ServicesPage/ServicesPage";
 
 function App() {
   return (
@@ -13,6 +15,22 @@ function App() {
             element={
               <Layout>
                 <HomePage />
+              </Layout>
+            }
+          />
+          <Route
+            path='/aboutUs'
+            element={
+              <Layout>
+                <AboutPage />
+              </Layout>
+            }
+          />
+          <Route
+            path='/servicesPage'
+            element={
+              <Layout>
+                <ServicesPage />
               </Layout>
             }
           />

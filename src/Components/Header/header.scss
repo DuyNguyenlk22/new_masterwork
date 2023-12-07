@@ -1,5 +1,9 @@
 #header {
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+}
+
+#header,
+.ant-popover-inner-content {
     li {
         position: relative;
         transition: all 0.5s;
@@ -28,4 +32,27 @@
     right: 0;
     left: 0;
     z-index: 1030;
+}
+
+.menu-mobile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #fff;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    li {
+        margin-bottom: 10px;
+    }
+}
+.showMenu {
+    transform: scale(1, 1);
 }
