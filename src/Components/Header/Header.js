@@ -57,15 +57,20 @@ export default function Header() {
                 <div>
                   <i className='fa-regular fa-moon text-2xl cursor-pointer'></i>
                 </div>
-                <button onClick={toggleNav} className='w-[40px] h-[40px] bg-[#dc4f72] text-white rounded'>
-                  <i className={isNavVisible ? "fa-solid fa-bars text-lg" : "fa-solid fa-xmark text-lg"}></i>
+                <button
+                  onClick={toggleNav}
+                  className='w-[40px] h-[40px] bg-[#dc4f72] text-white rounded'>
+                  <i
+                    className={
+                      isNavVisible ? "fa-solid fa-bars text-lg" : "fa-solid fa-xmark text-lg"
+                    }></i>
                 </button>
               </div>
               <ul className={`${isNavVisible ? "hidden" : `${isShowMenu}`} menu-mobile`}>
                 {navItem.map((item, index) => {
                   return (
                     <li key={`item${index}`}>
-                      <NavLink className={index === 0 ? "color-pink" : ""} to={`#${item.title}`}>
+                      <NavLink className={index === 0 ? "color-pink" : ""} to={item.link}>
                         {item.title}
                       </NavLink>
                     </li>
