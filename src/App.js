@@ -4,6 +4,8 @@ import Layout from "./Layout/Layout";
 import HomePage from "./Page/HomePage/HomePage";
 import AboutPage from "./Page/AboutUsPage/AboutPage";
 import ServicesPage from "./Page/ServicesPage/ServicesPage";
+import ContactPage from "./Page/ContactPage/ContactPage";
+import Page404 from "./Page/Page404/Page404";
 
 function App() {
   return (
@@ -31,6 +33,22 @@ function App() {
             element={
               <Layout>
                 <ServicesPage />
+              </Layout>
+            }
+          />
+          <Route
+            path='/contactPage'
+            element={
+              <Layout>
+                <ContactPage />
+              </Layout>
+            }
+          />
+          <Route
+            path='/404'
+            element={
+              <Layout>
+                <Page404 />
               </Layout>
             }
           />
