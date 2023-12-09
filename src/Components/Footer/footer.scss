@@ -15,3 +15,36 @@
         }
     }
 }
+
+//dark theme
+.dark {
+    .footer__content {
+        background: #191c1d;
+        h3 {
+            color: white;
+        }
+    }
+    .formFooter {
+        h3 {
+            color: white;
+        }
+        .letter-box {
+            background: #131617;
+            h4 {
+                color: white;
+            }
+            p {
+                color: #b7b7b7;
+            }
+        }
+    }
+    .footer__bottom {
+        .right {
+            color: #b7b7b7;
+        }
+        i,
+        a {
+            color: white;
+        }
+    }
+}

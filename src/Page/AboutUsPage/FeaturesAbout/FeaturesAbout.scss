@@ -50,3 +50,22 @@
         margin-bottom: 20px;
     }
 }
+
+//dark theme
+.dark {
+    .featuresAbout {
+        background: #191c1d;
+
+        h4 {
+            color: white;
+        }
+    }
+    .featuresAbout__item {
+        background: #131617;
+        #description {
+            p {
+                color: #b7b7b7;
+            }
+        }
+    }
+}

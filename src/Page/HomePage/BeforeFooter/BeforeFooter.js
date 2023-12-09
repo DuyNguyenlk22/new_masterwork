@@ -1,4 +1,5 @@
 import React from "react";
+import "./beforeFooter.scss";
 
 export default function BeforeFooter() {
   return (
@@ -9,8 +10,8 @@ export default function BeforeFooter() {
             Ready to build your own brand community?
           </h3>
           <p className='my-4'>
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus
-            nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+            Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.
           </p>
           <div className='mt-10'>
             <button className='btnOutlineGlobal mr-5'>BOOK A DEMO</button>

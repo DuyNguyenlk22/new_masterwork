@@ -1,0 +1,14 @@
+//dark theme
+.dark {
+    .general {
+        background: #191c1d;
+        .ant-collapse-borderless {
+            background-color: #131617;
+            border: 1px solid #333 !important;
+        }
+        h3,
+        .arrow {
+            color: white;
+        }
+    }
+}

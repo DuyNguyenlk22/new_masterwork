@@ -1,4 +1,5 @@
 import React from "react";
+import "./strategy.scss";
 
 let data = [
   {
@@ -27,14 +28,14 @@ let renderListLeft = () => {
       return (
         <div key={index} className='flex'>
           <div>
-            <span className='w-[40px] h-[40px] leading-[40px] text-center color-pink text-xl bg-white font-bold rounded-full shadow-md inline-block'>
+            <span className='strategy__number w-[40px] h-[40px] leading-[40px] text-center color-pink text-xl bg-white font-bold rounded-full shadow-md inline-block'>
               {index + 1}
             </span>
           </div>
           <div className='px-6'>
-            <h1 className='text-lg font-bold color-title hover:text-[#dc4f72] duration-300'>
+            <h2 className='text-lg font-bold color-title hover:text-[#dc4f72] duration-300'>
               {item.title}
-            </h1>
+            </h2>
             <p>
               Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur
               adipisicing elit.
@@ -52,14 +53,14 @@ let renderListRight = () => {
       return (
         <div key={index} className='flex'>
           <div>
-            <span className='w-[40px] h-[40px] leading-[40px] text-center color-pink text-xl bg-white font-bold rounded-full shadow-md inline-block'>
+            <span className='strategy__number w-[40px] h-[40px] leading-[40px] text-center color-pink text-xl bg-white font-bold rounded-full shadow-md inline-block'>
               {index + 1}
             </span>
           </div>
           <div className='px-6'>
-            <h1 className='text-lg font-bold color-title hover:text-[#dc4f72] duration-300'>
+            <h2 className='text-lg font-bold color-title hover:text-[#dc4f72] duration-300'>
               {item.title}
-            </h1>
+            </h2>
             <p>
               Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur
               adipisicing elit.
@@ -76,7 +77,7 @@ export default function Strategy() {
     <section className='strategy py-12 bg-[#F7F9FC]'>
       <div className='container'>
         <div className='creative_title max-w-[750px] m-auto text-center'>
-          <p className='color-pink font-bold mb-[5px]'>THE BEST PRODUCTS</p>
+          <h4 className='color-pink font-bold mb-[5px]'>THE BEST PRODUCTS</h4>
           <h2 className='text-[32px] leading-[40px] md:text-[46px] font-bold color-title md:leading-[1]'>
             How we make your strategy business
           </h2>

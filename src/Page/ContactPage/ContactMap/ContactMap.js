@@ -1,4 +1,5 @@
 import React from "react";
+import "./contactMap.scss";
 
 export default function ContactMap() {
   return (

@@ -1,6 +1,7 @@
 import { Breadcrumb } from "antd";
 import { HomeOutlined, UserOutlined } from "@ant-design/icons";
 import React from "react";
+import "./aboutUs.scss";
 
 let data = [
   { title: "Website Designing and Development" },
@@ -17,7 +18,7 @@ let data2 = [
 export default function AboutUs() {
   return (
     <section className='aboutUs'>
-      <div className='mt-[80px] lg:mt-[90px] px-4 py-5 bg-[#F7F9FC]'>
+      <div className='breadcrumb mt-[80px] lg:mt-[90px] px-4 py-5 bg-[#F7F9FC]'>
         <div className='container'>
           <Breadcrumb
             separator={<i className='fa-solid fa-angles-right'></i>}
@@ -25,10 +26,10 @@ export default function AboutUs() {
               {
                 href: "/",
                 title: (
-                  <>
+                  <div className='flex space-x-2'>
                     <HomeOutlined />
-                    <span className='color-pink'>Home</span>
-                  </>
+                    <p className='color-pink'>Home</p>
+                  </div>
                 ),
               },
               {
@@ -44,7 +45,7 @@ export default function AboutUs() {
           />
         </div>
       </div>
-      <div className='pt-12'>
+      <div className='aboutUs__content pt-12'>
         <div className='container'>
           <div className='aboutUs__header text-center mb-12'>
             <h2 className='color-title text-[46px] leading-[55px] font-bold'>About Us</h2>
@@ -78,7 +79,9 @@ export default function AboutUs() {
               return (
                 <div
                   key={`item${index}`}
-                  className={`${index === 2 ? "md:translate-x-1/2" : " "}  py-4`}>
+                  className={`${
+                    index === 2 ? "md:translate-x-1/2 translate-x-0 lg:translate-x-0" : " "
+                  }  py-4`}>
                   <h5 className='text-[26px] color-title leading-[32px] font-bold'>{item.title}</h5>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor

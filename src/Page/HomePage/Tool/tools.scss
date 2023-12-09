@@ -7,3 +7,21 @@
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
     }
 }
+
+//dark theme
+.dark {
+    .tools {
+        background: #131617;
+        h3 {
+            color: #eee;
+        }
+        .tools__card {
+            background: #191c1d;
+            border: 1px solid transparent;
+            &:hover {
+                background: #131617;
+                border: 1px solid #333;
+            }
+        }
+    }
+}

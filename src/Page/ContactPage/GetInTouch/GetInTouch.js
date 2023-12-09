@@ -1,4 +1,5 @@
 import React from "react";
+import "./getInTouch.scss";
 
 let data = [
   {
@@ -26,7 +27,7 @@ export default function GetInTouch() {
     <section className='getInTouch py-12 bg-[#F7F9FC]'>
       <div className='container'>
         <div className='getInTouch_title max-w-[750px] m-auto text-center'>
-          <p className='color-pink font-bold mb-[5px]'>GET IN TOUCH</p>
+          <h4 className='color-pink font-bold mb-[5px]'>GET IN TOUCH</h4>
           <h2 className='text-[32px] leading-[40px] md:text-[46px] font-bold color-title md:leading-[1]'>
             We’re here to help
           </h2>
@@ -40,12 +41,12 @@ export default function GetInTouch() {
             return (
               <div
                 key={index}
-                className='p-8 bg-white text-center imgHover shadow-md hover:shadow-xl rounded-md'>
+                className='getInTouch__item p-8 bg-white text-center imgHover shadow-md hover:shadow-xl rounded-md'>
                 <div>
                   <i
-                    className={`${item.icon} w-[60px] h-[60px] leading-[60px] text-center rounded-full bg-[#FBEDF1] text-[#dc4f72] text-lg`}></i>
+                    className={`${item.icon} getInTouch__icon  w-[60px] h-[60px] leading-[60px] text-center rounded-full bg-[#FBEDF1] text-[#dc4f72] text-lg`}></i>
                 </div>
-                <h1 className='text-xl font-bold my-5 color-title'>{item.titlle}</h1>
+                <h2 className='text-xl font-bold my-5 color-title'>{item.titlle}</h2>
                 <p>{item.info1}</p>
                 <p>{item.info2}</p>
               </div>

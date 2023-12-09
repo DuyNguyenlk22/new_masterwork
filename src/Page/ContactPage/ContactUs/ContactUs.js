@@ -2,6 +2,8 @@ import React, { Fragment, useState } from "react";
 import { Breadcrumb, ConfigProvider, Spin } from "antd";
 import { HomeOutlined, UserOutlined } from "@ant-design/icons";
 import { LoadingOutlined } from "@ant-design/icons";
+import "./contactUs.scss";
+
 let dataForm = [
   { name: "Enter your name" },
   { name: "Enter your email" },
@@ -14,7 +16,7 @@ export default function ContactUs() {
   const [isHide, setIsHide] = useState(false);
   return (
     <section className='contactUs pb-12'>
-      <div className='mt-[80px] lg:mt-[90px] px-4 py-5 bg-[#F7F9FC]'>
+      <div className='breadcrumb mt-[80px] lg:mt-[90px] px-4 py-5 bg-[#F7F9FC]'>
         <div className='container'>
           <Breadcrumb
             separator={<i className='fa-solid fa-angles-right'></i>}
@@ -41,19 +43,19 @@ export default function ContactUs() {
           />
         </div>
       </div>
-      <div className='pt-12'>
+      <div className='contactUs pt-12'>
         <div className='container'>
-          <div className='aboutUs__header text-center mb-12'>
+          <div className='contactUs__header text-center mb-12'>
             <h2 className='color-title text-[46px] leading-[55px] font-extrabold'>Contact Us</h2>
           </div>
-          <div className='flex flex-wrap lg:flex-nowrap md:px-10'>
+          <div className='contactUs__content flex flex-wrap lg:flex-nowrap md:px-10'>
             <div className='flex flex-col justify-center w-full lg:w-1/2 lg:px-0 md:px-12 lg:py-12'>
               <img src='./image/contact.jpg' className='rounded-md imgHover' alt='...' />
             </div>
-            <div className='flex flex-col justify-evenly p-8 bg-white shadow-2xl rounded-md w-full lg:w-1/2'>
-              <h1 className='text-[32px] leading-[40px] md:text-[46px] font-bold color-title md:leading-[1]'>
+            <div className='contactUs__right flex flex-col justify-evenly p-8 bg-white shadow-2xl rounded-md w-full lg:w-1/2'>
+              <h2 className='text-[32px] leading-[40px] md:text-[46px] font-bold color-title md:leading-[1]'>
                 Drop us a Message
-              </h1>
+              </h2>
               <p className='md:my-0 my-4'>
                 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices turpis sodales
                 quis. Integer sit amet mattis quam.

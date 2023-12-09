@@ -14,7 +14,7 @@ export default function FeaturesAbout() {
     <section className='featuresAbout bg-[#F7F9FC] py-12'>
       <div className='container'>
         <div className='featuresAbout_title max-w-[750px] m-auto text-center'>
-          <p className='color-pink font-bold mb-[5px]'>FEATURES</p>
+          <h5 className='color-pink font-bold mb-[5px]'>FEATURES</h5>
           <h2 className='text-[32px] leading-[40px] md:text-[46px] font-bold color-title md:leading-[1]'>
             The Largest Business Expert !
           </h2>
@@ -26,7 +26,7 @@ export default function FeaturesAbout() {
         <div className='grid grid-cols-1 gap-14 md:grid-cols-2 md:gap-12 lg:grid-cols-4 lg:gap-8 mt-14'>
           {data.map((item, index) => {
             return (
-              <div key={index} className='bg-white shadow-xl rounded-lg'>
+              <div key={index} className='featuresAbout__item bg-white shadow-xl rounded-lg'>
                 <div id='bott-img' className='text-center'>
                   <div className='featuresAbout__icon'>
                     <i className={item.icon}></i>

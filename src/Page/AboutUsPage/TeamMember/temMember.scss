@@ -1,0 +1,14 @@
+.dark {
+    .teamMember {
+        background: #191c1d;
+        .memberItem {
+            border: 1px solid #333;
+            .memberItem__info {
+                background: #131617;
+                h3 {
+                    color: white;
+                }
+            }
+        }
+    }
+}

@@ -25,3 +25,17 @@
     width: 30px !important;
     height: 4px !important;
 }
+
+// dark theme
+.dark {
+    .testimonails {
+        background: linear-gradient(to right, #131617, rgba(255, 255, 255, 0.77)), url(../../../../public/image/bg2.jpg);
+        .mySwiper {
+            background: #131617;
+            p,
+            .fa-quote-left {
+                color: #b7b7b7;
+            }
+        }
+    }
+}

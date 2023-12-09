@@ -21,13 +21,13 @@ export default function Creative() {
     <section className='creative py-12'>
       <div className='container'>
         <div className='creative_title max-w-[750px] m-auto text-center'>
-          <p className='color-pink font-bold mb-[5px]'>CREATIVE SOLUTIONS</p>
+          <h4 className='color-pink font-bold mb-[5px]'>CREATIVE SOLUTIONS</h4>
           <h2 className='text-[32px] leading-[40px] md:text-[46px] font-bold color-title md:leading-[1]'>
             Watch Our Two Minute Intro
           </h2>
           <p className='my-4'>
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus
-            nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+            Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.
           </p>
         </div>
         <div className='flex flex-col justify-center items-center mt-10 relative'>
@@ -53,7 +53,7 @@ export default function Creative() {
         open={isModalOpen}
         onOk={handleOk}
         onCancel={handleCancel}>
-        <form className='space-y-4 mt-6'>
+        <form id='myForm' className='space-y-4 mt-6'>
           {dataForm.map((item, index) => {
             return (
               <Fragment key={index}>

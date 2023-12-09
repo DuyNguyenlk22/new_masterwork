@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import { Autoplay } from "swiper/modules";
+import "./sliderAbout.scss";
 
 let keyImg = [1, 2, 3, 4, 3, 1, 4, 2];
 

@@ -36,7 +36,7 @@ export default function Footer() {
                   </ul>
                 </div>
               </div>
-              <div>
+              <div className='formFooter'>
                 <h3 className='text-xl mb-[30px] font-bold'>Newsletter</h3>
                 <div className='letter-box p-8 bg-white shadow-xl rounded'>
                   <h4 className='text-lg'>Get latest updates and offers.</h4>

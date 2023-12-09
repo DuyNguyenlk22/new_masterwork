@@ -56,3 +56,29 @@
 .showMenu {
     transform: scale(1, 1);
 }
+
+//dark theme
+.dark {
+    .header {
+        background-color: #131617;
+        li {
+            color: #eee;
+        }
+        .iconSearch {
+            background: #191c1d;
+            border: 1px solid #333;
+            &:hover {
+                i {
+                    color: #eee;
+                    opacity: 1;
+                }
+            }
+            i {
+                color: #b7b7b7;
+            }
+        }
+    }
+    .menu-mobile {
+        background: #131617;
+    }
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import { Breadcrumb } from "antd";
 import { HomeOutlined, UserOutlined } from "@ant-design/icons";
+import "./ourServices.scss";
 
 let data = [
   { numberImg: 6, title: "Concept & Strategy" },
@@ -12,7 +13,7 @@ let data = [
 export default function OurServices() {
   return (
     <section className='ourServices pb-12'>
-      <div className='mt-[80px] lg:mt-[90px] px-4 py-5 bg-[#F7F9FC]'>
+      <div className='breadcrumb mt-[80px] lg:mt-[90px] px-4 py-5 bg-[#F7F9FC]'>
         <div className='container'>
           <Breadcrumb
             separator={<i className='fa-solid fa-angles-right'></i>}
@@ -47,9 +48,9 @@ export default function OurServices() {
           <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 mt-10'>
             {/* left */}
             <div>
-              <h1 className='color-title text-[42px] leading-[44px] font-semibold'>
+              <h2 className='color-title text-[42px] leading-[44px] font-semibold'>
                 Our Best Services
-              </h1>
+              </h2>
               <h3 className='my-4 text-[24px] leading-[30px] text-[#999]'>
                 Fusce fringilla tincidunt laoreet volutpat cras varius sit. metus vitae diam mauris.
               </h3>
@@ -65,12 +66,12 @@ export default function OurServices() {
               {data.map((item, index) => {
                 return (
                   <div key={index} className='px-[30px]'>
-                    <div className='w-[80px] h-[80px] mb-4 flex items-center justify-center bg-[#F7F9FC] rounded-full shadow-lg'>
+                    <div className='ourServices__icon w-[80px] h-[80px] mb-4 flex items-center justify-center bg-[#F7F9FC] rounded-full shadow-lg'>
                       <img src={`./image/s${item.numberImg}.png`} alt='...' />
                     </div>
-                    <h3 className='mb-3 text-xl color-title font-bold hover:text-[#dc4f72] duration-300'>
+                    <h2 className='mb-3 text-xl color-title font-bold hover:text-[#dc4f72] duration-300'>
                       {item.title}
-                    </h3>
+                    </h2>
                     <p>Lorem ipsum dolor sit amet consectetur elit. Inventore, eius!</p>
                   </div>
                 );

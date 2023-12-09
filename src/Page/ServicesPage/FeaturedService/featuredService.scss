@@ -1,0 +1,12 @@
+.dark {
+    .featuredService {
+        background-color: #131617;
+        span {
+            color: white;
+        }
+        .featuredService__left,
+        .featuredService__right {
+            border: 1px solid #191c1d;
+        }
+    }
+}

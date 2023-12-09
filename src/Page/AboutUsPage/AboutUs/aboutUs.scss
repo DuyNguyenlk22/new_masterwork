@@ -1,0 +1,17 @@
+//dark theme
+.dark {
+    .aboutUs {
+        .aboutUs__content {
+            background: #131617;
+            h2,
+            h3,
+            span,
+            h5 {
+                color: white;
+            }
+            p {
+                color: #b7b7b7;
+            }
+        }
+    }
+}

@@ -78,3 +78,43 @@ html {
 .ant-collapse > .ant-collapse-item > .ant-collapse-header {
   align-items: center !important;
 }
+
+//dark theme
+.dark {
+  h2 {
+    color: white;
+  }
+  p {
+    color: #b7b7b7;
+  }
+  .breadcrumb {
+    background-color: #191c1d;
+    span,
+    .fa-angles-right {
+      color: #b7b7b7;
+    }
+  }
+  #myForm {
+    input {
+      border: 1px solid #333;
+      background: #191c1d;
+      color: #eee;
+      outline: none;
+      &:focus-visible {
+        outline: 1px solid #dc4f72;
+      }
+    }
+  }
+  .ant-modal-content,
+  .ant-modal-title {
+    background: #191c1d;
+  }
+  .ant-modal-title {
+    h1 {
+      color: white;
+    }
+  }
+  .anticon svg {
+    color: white;
+  }
+}

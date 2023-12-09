@@ -9,3 +9,17 @@
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
     }
 }
+
+//dark theme
+.dark {
+    .about {
+        background-color: #191c1d;
+        h4 {
+            color: #eee;
+        }
+    }
+    .number__item {
+        background-color: #131617;
+        border: 1px solid #333;
+    }
+}

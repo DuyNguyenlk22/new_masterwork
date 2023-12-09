@@ -1,4 +1,5 @@
 import React from "react";
+import "./temMember.scss";
 
 let data = [
   { keyImg: 1, name: "Gwen Johnson", role: "Founder & CEO" },
@@ -14,11 +15,13 @@ let data = [
 let renderMember = () => {
   return data.map((item, index) => {
     return (
-      <div className='memberItem imgHover cursor-pointer rounded-lg overflow-hidden hover:shadow-lg'>
+      <div
+        key={index}
+        className='memberItem imgHover cursor-pointer rounded-lg overflow-hidden hover:shadow-lg'>
         <div className='w-full h-[250px] overflow-hidden inline-block'>
           <img src={`./image/client${item.keyImg}.jpg`} alt='...' />
         </div>
-        <div className='p-4 bg-white border-[#eee] -mt-3'>
+        <div className='memberItem__info p-4 bg-white border-[#eee] -mt-3'>
           <h3 className='text-[22px] leading-[26px] font-bold color-title'>{item.name}</h3>
           <p className='mb-3'>{item.role}</p>
           <div className='space-x-5'>
@@ -36,7 +39,7 @@ export default function TeamMember() {
     <section className='teamMember py-12 bg-[#F7F9FC]'>
       <div className='container'>
         <div className='teamMember_title max-w-[750px] m-auto text-center'>
-          <p className='color-pink font-bold mb-[5px]'>OUR TEAM MEMBERS</p>
+          <h4 className='color-pink font-bold mb-[5px]'>OUR TEAM MEMBERS</h4>
           <h2 className='text-[32px] leading-[40px] md:text-[46px] font-bold color-title md:leading-[1]'>
             Our Creative Team
           </h2>

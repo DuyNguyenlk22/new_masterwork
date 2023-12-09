@@ -1,4 +1,6 @@
 import React from "react";
+import "./featuredService.scss";
+
 let data = [
   { title: "Website Designing and Development" },
   { title: "Android and iOs Apps Development" },
@@ -11,7 +13,7 @@ export default function FeaturedService() {
     <section className='featuredService py-12'>
       <div className='container'>
         <div className='featuredService_title max-w-[750px] m-auto text-center'>
-          <p className='color-pink font-bold mb-[5px]'>FEATURED SERVICES</p>
+          <h4 className='color-pink font-bold mb-[5px]'>FEATURED SERVICES</h4>
           <h2 className='text-[32px] leading-[40px] md:text-[46px] font-bold color-title md:leading-[1]'>
             Some More Features
           </h2>
@@ -22,9 +24,9 @@ export default function FeaturedService() {
         </div>
         <div className='grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-10 mt-10'>
           <div className='featuredService__left p-8 border-2 border-[#F7F9FC] rounded-md'>
-            <h3 className='text-[38px] leading-[1] mb-3 font-bold color-title'>
+            <h2 className='text-[38px] leading-[1] mb-3 font-bold color-title'>
               Connect people and ideas
-            </h3>
+            </h2>
             <p className='my-4'>
               Lorem ipsum dolor sit amet adipisicing elit. Consequuntur odio voluptatem tenetur
               consequatur adipisicing elit.
@@ -44,9 +46,9 @@ export default function FeaturedService() {
           </div>
           <div className='featuredService__right p-8 border-2 border-[#F7F9FC] rounded-md'>
             <img src='./image/bg2.jpg' className='imgHover rounded-md' alt='...' />
-            <h3 className='text-[38px] leading-[1] mt-8 mb-3 font-bold color-title'>
+            <h2 className='text-[38px] leading-[1] mt-8 mb-3 font-bold color-title'>
               Work better together
-            </h3>
+            </h2>
             <p className='my-4'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio
               voluptatem tenetur consequatur.Lorem ipsum dolor sit amet consectetur adipisicing
